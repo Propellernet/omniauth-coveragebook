@@ -6,7 +6,7 @@ module OmniAuth
       option :name, :coveragebook
 
       option :client_options, {
-        :site => ENV['COVERAGEBOOK_OAUTH_SITE'] ? ENV['COVERAGEBOOK_OAUTH_SITE'] : 'https://accounts.coveragebook.com',
+        :site => ENV['COVERAGEBOOK_OAUTH_ROOT_URL'] ? ENV['COVERAGEBOOK_OAUTH_ROOT_URL'] : 'https://accounts.coveragebook.com',
         :authorize_url => '/oauth/authorize'
       }
 
